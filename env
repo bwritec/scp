@@ -25,6 +25,13 @@
 # app_baseURL = ''
 # app.forceGlobalSecureRequests = false
 # app.CSPEnabled = false
+# app.name = "Website Name"
+# app.rate = 15 // Taxa de 15% da plataforma
+
+#--------------------------------------------------------------------
+# MelhorEnvio
+#--------------------------------------------------------------------
+melhorenvio.token = 
 
 #--------------------------------------------------------------------
 # DATABASE
@@ -49,6 +56,7 @@
 # database.tests.DBCollat = utf8mb4_general_ci
 # database.tests.port = 3306
 
+
 #--------------------------------------------------------------------
 # ENCRYPTION
 #--------------------------------------------------------------------
@@ -67,3 +75,15 @@
 #--------------------------------------------------------------------
 
 # logger.threshold = 4
+
+#--------------------------------------------------------------------
+# Email
+#--------------------------------------------------------------------
+# email.fromEmail = "nao-responder@seudominio.com"
+# email.fromName = "Seu App"
+# email.protocol = smtp
+# email.SMTPHost = smtp.seudominio.com
+# email.SMTPUser = usuario@seudominio.com
+# email.SMTPPass = senha
+# email.SMTPPort = 587
+# email.SMTPCrypto = tls
