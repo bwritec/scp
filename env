@@ -26,7 +26,6 @@
 # app.forceGlobalSecureRequests = false
 # app.CSPEnabled = false
 # app.name = "Website Name"
-# app.rate = 15 // Taxa de 15% da plataforma
 
 #--------------------------------------------------------------------
 # MelhorEnvio
