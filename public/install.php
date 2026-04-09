@@ -347,7 +347,6 @@
                      */
                     setEnvValue("app.name", $_POST["app_name"]);
                     setEnvValue("app.baseURL", $_POST["app_url"]);
-                    setEnvValue("app.rate", $_POST["app_rate"]);
 
                     /**
                      * Database.
@@ -848,28 +847,6 @@
                                                         <?php if (array_key_exists("app_url", $errors)): ?>
                                                             <div class="invalid-feedback" style="display: block;">
                                                                 <?php foreach ($errors["app_url"] as $value): ?>
-                                                                    <?= $value; ?>
-                                                                <?php endforeach; ?>
-                                                            </div>
-                                                        <?php endif; ?>
-                                                    </div>
-
-                                                    <div class="mb-3">
-                                                        <label for="app_rate" class="form-label">
-                                                            Taxa do site
-                                                        </label>
-
-                                                        <div class="input-group mb-3">
-                                                            <input type="text" name="app_rate" id="app_rate" class="form-control">
-
-                                                            <span class="input-group-text">
-                                                                %
-                                                            </span>
-                                                        </div>
-
-                                                        <?php if (array_key_exists("app_rate", $errors)): ?>
-                                                            <div class="invalid-feedback" style="display: block;">
-                                                                <?php foreach ($errors["app_rate"] as $value): ?>
                                                                     <?= $value; ?>
                                                                 <?php endforeach; ?>
                                                             </div>
