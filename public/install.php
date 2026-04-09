@@ -1168,7 +1168,7 @@
                             <div class="card">
                                 <div class="card-body">
                                     <p>
-                                        Boas-vindas ao Kwrite. Antes de iniciar, você
+                                        Boas-vindas ao SCP. Antes de iniciar, você
                                         precisará conhecer os seguintes itens.
                                     </p>
 
