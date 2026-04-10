@@ -12,4 +12,16 @@ class HomeController extends BaseController
 
         return view('index', $data);
     }
+
+    /**
+     *
+     */
+    public function blank(): string
+    {
+        $data = [
+            'title' => 'Branco',
+        ];
+
+        return view("blank", $data);
+    }
 }

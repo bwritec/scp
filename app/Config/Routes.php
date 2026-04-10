@@ -1,8 +1,15 @@
 <?php
 
-use CodeIgniter\Router\RouteCollection;
+    use CodeIgniter\Router\RouteCollection;
 
-/**
- * @var RouteCollection $routes
- */
-$routes->get('/', 'HomeController::index');
+
+    /**
+     * @var RouteCollection $routes
+     */
+
+    /**
+     * /
+     * /blank
+     */
+    $routes->get('/', 'HomeController::index');
+    $routes->get('/blank', 'HomeController::blank');
