@@ -9,7 +9,7 @@ use CodeIgniter\HTTP\RequestInterface;
 use CodeIgniter\HTTP\ResponseInterface;
 use Psr\Log\LoggerInterface;
 
-use App\Models\CategorieModel;
+use App\Models\CategoryModel;
 use App\Models\LinkModel;
 
 /**
@@ -83,7 +83,7 @@ abstract class BaseController extends Controller
          * Adicionar categorias ao menu dropdown
          * do site.
          */
-        $categories = new CategorieModel();
+        $categories = new CategoryModel();
         $allCategories = $categories->orderBy('name', 'ASC')->findAll();
 
         /**

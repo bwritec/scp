@@ -8,7 +8,7 @@
     /**
      *
      */
-    class CategorieModel extends Model
+    class CategoryModel extends Model
     {
         /**
          *
