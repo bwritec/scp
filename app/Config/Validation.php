@@ -25,6 +25,23 @@ class Validation extends BaseConfig
         FormatRules::class,
         FileRules::class,
         CreditCardRules::class,
+
+        /**
+         * As regras desse software.
+         */
+        \App\Validation\MyRules::class,
+    ];
+
+    /**
+     * Mensagems de erro customizaveis
+     */
+    public $customErrors = [
+        /**
+         * Mensagem de erro para a regra CPF.
+         */
+        'cpf' => [
+            'is_cpf' => 'O CPF informado não é válido.',
+        ],
     ];
 
     /**
