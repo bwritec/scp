@@ -15,6 +15,12 @@
     $routes->get('/blank', 'HomeController::blank');
 
     /**
+     * Favorites
+     */
+    $routes->post('/favorites/add',    'FavoriteController::add');
+    $routes->post('/favorites/remove', 'FavoriteController::remove');
+
+    /**
      * /register
      */
     $routes->get('/register', 'RegisterController::index');
@@ -41,3 +47,8 @@
      * /dashboard
      */
     $routes->get('/dashboard', 'DashboardController::index');
+
+    /**
+     * /dashboard/favorites
+     */
+    $routes->get('/dashboard/favorites',  'FavoriteController::list');
