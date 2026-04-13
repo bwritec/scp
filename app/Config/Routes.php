@@ -58,3 +58,9 @@
      */
     $routes->get('/dashboard/address', 'AddressController::index');
     $routes->post('/dashboard/address', 'AddressController::save');
+
+    /**
+     * /dashboard/contact
+     */
+    $routes->get('/dashboard/contact', 'PhoneController::index');
+    $routes->post('/dashboard/contact', 'PhoneController::save');
