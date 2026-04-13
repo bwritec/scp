@@ -52,3 +52,9 @@
      * /dashboard/favorites
      */
     $routes->get('/dashboard/favorites',  'FavoriteController::list');
+
+    /**
+     * /dashboard/address
+     */
+    $routes->get('/dashboard/address', 'AddressController::index');
+    $routes->post('/dashboard/address', 'AddressController::save');
