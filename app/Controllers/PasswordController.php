@@ -40,6 +40,7 @@ class PasswordController extends BaseController
         $emailService = \Config\Services::email();
         $emailService->setTo($email);
         $emailService->setSubject('Redefinição de senha');
+        $emailService->setMailType('html');
         $emailService->setMessage("
             Olá {$user['name']},<br><br>
             Clique no link abaixo para redefinir sua senha:<br>
