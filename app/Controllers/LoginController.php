@@ -56,7 +56,6 @@ class LoginController extends BaseController
 
         $cpf  = $this->request->getPost('cpf');
         $pass = $this->request->getPost('password');
-
         $user = $userModel->getByCpf($cpf);
 
         if (!$user || !password_verify($pass, $user['password']))
@@ -64,7 +63,7 @@ class LoginController extends BaseController
             return view('login', [
                 'title'  => 'Login',
                 'errors' => [
-                    'login' => 'CPF ou senha inválidos.'
+                    'cpf' => 'CPF ou senha inválidos.'
                 ]
             ]);
         }
